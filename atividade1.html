@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade1</title>
+
+
+    <style>
+        .tabela{
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            
+            
+        }
+        .tabela div{
+            padding: 10px;
+        }
+        .th{
+            
+            background-color: gray;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+        }
+        .primeira{
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .segunda{
+            border: 1px solid black;
+        }
+        .tdmodelo{
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            background-color: #ccffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tdconsumo{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+
+            background-color: #98ff98;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="tabela">
+        <div class="th primeira">Modelo</div>
+        <div class="th segunda">Consumo</div>
+
+        <div class="tdmodelo">Clio</div>
+        <div class="tdconsumo">15,8 Km/l</div>
+
+        <div class="tdmodelo">Palio Fire</div>
+        <div class="tdconsumo">15,4 Km/l</div>
+
+        <div class="tdmodelo">Novo Uno</div>
+        <div class="tdconsumo">15,2 Km/l</div>
+
+        <div class="tdmodelo">Up</div>
+        <div class="tdconsumo">14,3 Km/l</div>
+    </div>
+    
+</body>
+</html>
