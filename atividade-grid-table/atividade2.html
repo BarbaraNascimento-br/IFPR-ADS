@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade02</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            display: flex;
+        }
+        
+        .titulo{
+            height: 50px;
+            width: 400px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    
+        .quadrado{
+            border: 1px solid black;
+            height: 20px;
+            width: 20px;
+            display: block;
+            margin: 5px 5px 7px 2px;
+
+        }
+        .dados{
+            margin:5px 5px 5px 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .cor1{
+            background-color: greenyellow;
+        }
+        .cor2{
+            background-color: green;
+        }
+        .cor3{
+            background-color: rgb(0, 77, 0);
+        }
+        .cor4{
+            background-color: rgb(49, 49, 109);
+        }
+        .cor5{
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo"><p>Mapa mundial mostrando os censos mais recentes dos países a parti de 2014:</p></div>
+    <div class="grid-container">
+        
+
+        <div class="quadrados">
+            <div class="quadrado cor1"></div>
+            <div class="quadrado cor2"></div>
+            <div class="quadrado cor3"></div>
+            <div class="quadrado cor4"></div>
+            <div class="quadrado cor5"></div>
+            
+        </div>
+        
+
+        <div>
+            
+            <div class="dados">2005 ou depois</div>
+            <div class="dados">2000 - 2004</div>
+            <div class="dados">1995 - 1999</div>
+            <div class="dados">1990 - 1994</div>
+            <div class="dados">1970 - 1989</div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

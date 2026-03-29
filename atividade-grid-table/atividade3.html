@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade03</title>
+
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, max-content);
+            border-top: 1px solid blue;
+            width: fit-content; /*Faz o grid envolver apenas as células*/
+            
+        }
+        .td{
+            padding: 10px;
+            height: 40px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid blue;
+            border-right: 1px solid blue;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(49, 46, 46);
+            
+        }
+
+        .destacar{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+    
+            <div class="td destacar">Total</div>
+            <div class="td">953.260</div>
+            <div class="td">721.291</div>
+        
+    
+            <div class="td destacar">Estabelecimento de ensino</div>
+            <div class="td">7.875</div>
+            <div class="td">6.444</div>
+        
+    
+            <div class="td destacar">Estabelecimento de saúde</div>
+            <div class="td">2.780</div>
+            <div class="td">2.507</div>
+
+            <div class="td destacar">Estabelecimento religioso</div>
+            <div class="td">50.729</div>
+            <div class="td">38.393</div>
+
+            <div class="td destacar">Estabelecimento agropecuário</div>
+            <div class="td">938</div>
+            <div class="td">629</div>
+        
+
+
+    </div>
+    
+</body>
+</html>
