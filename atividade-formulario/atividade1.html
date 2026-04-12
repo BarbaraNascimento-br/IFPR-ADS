@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade01</title>
+    <style>
+        form > label {
+            display: grid;
+            grid-template-columns:200px max-content ;
+            gap: 10px;
+            padding: 10px;
+            
+        }
+        form{
+            border: 1px solid green;
+            background-color: rgb(199, 241, 135);
+            width: 500px;
+        }
+        button{
+            margin: 10px;
+        }
+        span{
+            color: blue;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>
+            <span>Data de nascimento:</span>
+            <input type="date">
+        </label>
+        <label>
+            <span>Escolaridade:</span>
+            <select name="escolaridade">
+                <option value="EF">Ensino Fundamental</option>
+                <option value="EM">Ensino Médio</option>
+                <option value="ES">Ensino Superior</option>
+            </select>
+        </label>
+        <label >
+            <span>Situação da Escolaridade:</span>
+            <div>
+                <input type="radio" name="situacao" value="1">
+                Completo
+                <input type="radio" name="situacao" value="2">
+                Incompleto
+            </div>
+        </label>
+        <label >
+            <span>Nacionalidade:</span>
+            <select name="nacionalidade">
+                <option value="BR">Brasil</option>
+            </select>
+        </label>
+        <label >
+            <span>UF onde nasceu:</span>
+            <select name="ondeNasceu">
+                <option value="PR">Paraná</option>
+            </select>
+        </label>
+        <button>Enviar</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade04</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("634405.webp");
+        }
+        h2{
+            color: whitesmoke;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            width: 800px;
+            margin: auto;
+            margin-top: 200px;
+            border: 1px solid white;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: rgba(51, 50, 50, 0.822);
+        }
+        span:first-child{
+            color: white;
+            text-align: right;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+        div > span{
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 15px;
+            padding: 10px;
+        }
+        input, select{
+            padding: 5px;
+            border: 2px solid rgb(150, 127, 25);
+        }
+        div{
+            display: flex;
+            gap: 9px;
+        }
+        button{
+            margin-left: 105px;
+            padding: 5px;
+            color: navy ;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Cadastro usuário</h2>
+        <label>
+            <span>Nome</span>
+            <input type="text" name="nome" required>
+        </label>
+        <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            <span>Nascimento</span>
+            <input type="date" name="data_Nascimento">
+        </label>
+        <label>
+            <span>Pais</span>
+            <select name="paises">
+                <option value="">Selecione</option>
+            </select>
+        </label>
+        <label>
+            <span>Idade</span>
+            <div>
+                <input type="number" name="idade">
+                <span>DDD</span>
+                <input  maxlength="3" type="number" name="ddd">
+                <span>Telefone</span>
+                <input maxlength="9" type="number" name="tele">
+            </div>
+        </label>
+        <button>Adicionar</button>
+    </form>
+    
+</body>
+</html>

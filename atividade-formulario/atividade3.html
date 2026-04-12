@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade03</title>
+    <style>
+        body{
+            width: 300px;
+        }
+        form{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        label{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 10px;
+            padding: 5px;
+        }
+        
+        span:first-child{
+            text-align: right;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        input:invalid{
+            color: red;
+        }
+        input{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>
+            <span>Nome</span>
+            <input  type="text" name="nome" required minlength="3">
+        </label>
+        <label>
+            <span>Email</span>
+            <input  placeholder="user@example.org" type="email" name="email">
+        </label>
+        <label>
+            <span>Password</span>
+            <input  type="password" name="senha" required minlength="6" maxlength="10">
+        </label>
+        
+    </form>
+    
+</body>
+</html>
