@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade01</title>
+
+    <style>
+        .blocoUm{
+            height: 200px;
+            width: 400px;
+            
+        }
+        .loremText{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .buttons{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            gap: 10px;
+            display: flex;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="blocoUm" >
+        <span class="loremText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ipsum veniam soluta accusamus numquam non autem doloremque expedita optio perspiciatis repellat cumque quis, exercitationem illum sapiente assumenda ipsa dolore itaque!</span>
+        <div class="buttons">
+            <input type="button" value="Azul" onclick="mudarCor('blue')">
+            <input type="button" value="Verde claro" onclick="mudarCor('greenyellow')">
+            <input type="button" value="Vermelho" onclick="mudarCor('red')">
+        </div>
+
+    </div>
+    
+    <script>
+        
+        function mudarCor(cor){
+            document.body.style.backgroundColor = cor;
+        }
+    </script>
+</body>
+</html>

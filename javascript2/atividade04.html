@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade04</title>
+
+    <style>
+        body{
+            margin: 20px;
+        }
+        .tabela{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0;
+            width: 800px;
+            
+        }
+        .opcao{
+            display: inline;
+            padding: 5px;
+        }
+        .cores{
+            display: flex;
+            gap: 2px;
+            padding-top: 10px;
+            align-items: center;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        .quadrado{
+            margin: auto;
+            height: 50px;
+            width: 50px;
+        }
+        #primeiro{
+            background-color: red;
+        }
+        #segundo{
+            background-color: aqua;
+        }
+        #terceiro{
+            background-color: yellow;
+        }
+        #quarto{
+            background-color: green;
+        }
+        .blocoText{
+           border: 1px solid gray;
+            height: 200px;
+            width: 400px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tabela">
+        <div class="blocoText">
+            <div class="opcao" >
+                <h1>Opções de cores</h1>
+                <div class="cores">
+                    <div class="quadrado" id="primeiro" onmouseover="mudarCor(text1,'red')" onmouseout="voltarCor(text1)"></div>
+                    <div class="quadrado" id="segundo" onmouseover="mudarCor(text2,'aqua')" onmouseout="voltarCor(text2)"></div>
+                    <div class="quadrado" id="terceiro" onmouseover="mudarCor(text3,'yellow')" onmouseout="voltarCor(text3)"></div>
+                    <div class="quadrado" id="quarto" onmouseover="mudarCor(text4,'green')" onmouseout="voltarCor(text4)"></div>
+                </div>
+             </div>
+        </div>
+        <div class="blocoText"></div>
+        <div class="blocoText" id="text1">1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorum corporis, inventore qui aut optio pariatur, harum consequatur id nobis doloremque iure obcaecati accusantium deserunt itaque alias eligendi repellendus? Dignissimos?</div>
+        <div class="blocoText" id="text2">2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque a tenetur suscipit, blanditiis quas esse praesentium eum molestias autem laborum! Ea suscipit maiores repellendus obcaecati, ad dicta? Adipisci, nostrum ullam.</div>
+        <div class="blocoText" id="text3">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem. Natus consequatur obcaecati eius ipsam quibusdam, quidem nam consequuntur eligendi culpa exercitationem. Ullam cum iusto animi consequuntur reprehenderit, quas nemo.</div>
+        <div class="blocoText" id="text4">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nam quibusdam saepe officiis pariatur natus reiciendis eaque nulla, libero iusto accusantium aut et a commodi omnis, magnam itaque dolore! Iusto?</div>
+    </div>
+    
+
+
+    <script>
+        function voltarCor(elemento){
+            elemento.style.backgroundColor = 'white';
+        }
+        function mudarCor(elemento, cor){
+            elemento.style.backgroundColor = cor;
+        }
+    </script>
+</body>
+</html>
