@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade05</title>
+
+    <style>
+        .tudo{
+            display: flex;
+            gap: 20px;
+        }
+        .resultado{
+            height: 30px;
+            width: 60px;
+            background-color: lightgreen;
+            text-align: center;
+        }
+        .valorFinal{
+            color: rgb(59, 59, 59);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+     <h1>Orçamento</h1>
+    <div class="tudo">
+        
+        <select name="Item" id="itens">
+            <option id="leite" value="leite">Leite</option>
+            <option value="cafe">Café</option>
+            <option value="suco">Suco de uva</option>    
+        </select>
+        <label>
+            <span>Valor:</span>
+            <input type="number" id="valor">
+        </label>
+        <label>
+            <span>Quantidade:</span>
+            <input type="number" id="quantidade">
+        </label>
+        <button onclick="valorTotalDoItem()">=</button>
+        <div class="resultado"><span id="caixaVerde"></span></div>
+
+    </div>
+
+    <script>
+        let quantidadeDeNoItemEstoque = 100;
+        
+
+        function valorTotalDoItem(){
+            let valorItem = Number(document.getElementById("valor").value);
+            let quantidadeDoItemComprar = Number(document.getElementById("quantidade").value);
+
+            if (quantidadeDoItemComprar <= quantidadeDeNoItemEstoque){
+                let result = "R$" + Number(valorItem * quantidadeDoItemComprar);
+                return document.getElementById("caixaVerde").textContent = result;
+            }else{
+                alert("Não temos essa quantidade disponivel em nosso estoque :-:");
+            }  
+        }
+
+        
+    </script>
+    
+</body>
+</html>
