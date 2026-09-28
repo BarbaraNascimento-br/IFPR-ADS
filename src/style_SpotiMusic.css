@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  background-color: #121212;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+}
+ 
+h1 {
+  color: #ec0808;
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+ 
+h2 {
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #282828;
+  padding-bottom: 8px;
+}
+ 
+h3 {
+  color: #B3B3B3;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+ 
+/* Formulário */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  background-color: #181818;
+  padding: 16px;
+  border-radius: 8px;
+}
+ 
+input[type="text"],
+input[type="number"],
+select {
+  background-color: #2A2A2A;
+  border: 1px solid #3E3E3E;
+  color: #FFFFFF;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+ 
+input::placeholder {
+  color: #A7A7A7;
+}
+ 
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #ec0808;
+}
+ 
+input[type="submit"] {
+  background-color: #ec0808;
+  color: #000000;
+  font-weight: 700;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 500px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+ 
+input[type="submit"]:hover {
+  background-color: #ec0808;
+  transform: scale(1.03);
+}
+ 
+/* Mensagens de erro */
+#divErro {
+  color: #F15E6C;
+  font-size: 13px;
+  margin-top: 8px;
+  min-height: 18px;
+}
+ 
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #181818;
+  border-radius: 8px;
+  overflow: hidden;
+}
+ 
+th {
+  background-color: #282828;
+  color: #B3B3B3;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  padding: 12px;
+  border: none;
+  text-align: center;
+}
+ 
+td {
+  padding: 12px;
+  border: none;
+  border-top: 1px solid #282828;
+  font-size: 14px;
+  text-align: center;
+}
+ 
+tr:hover td {
+  background-color: #282828;
+}
+ 
+/* Botão de excluir */
+td a img {
+  width: 18px;
+  vertical-align: middle;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+ 
+td a:hover img {
+  opacity: 1;
+}
+ 
+/* Ícone de favorito na tabela geral */
+td img[src*="favorito"] {
+  width: 20px;
+  vertical-align: middle;
+}
